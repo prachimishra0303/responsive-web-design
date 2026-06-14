@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Prachi Mishra</h1>
+  <button id="themeBtn">Theme</button>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Frontend Developer</h2>
+    <p>Responsive website using CSS Grid and Flexbox.</p>
+  </div>
+
+  <img src="https://picsum.photos/300">
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h3>HTML</h3>
+    <p>Semantic webpages</p>
+  </div>
+
+  <div class="card">
+    <h3>CSS</h3>
+    <p>Responsive layouts</p>
+  </div>
+
+  <div class="card">
+    <h3>JavaScript</h3>
+    <p>Interactive websites</p>
+  </div>
+
+</section>
+
+<script>
+const btn = document.getElementById("themeBtn");
+
+btn.onclick = () => {
+  document.body.classList.toggle("dark");
+};
+</script>
+
+</body>
+</html>
